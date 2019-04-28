@@ -1,0 +1,9 @@
+version: "3"
+services:
+  workzone:
+    build: ./image
+    volumes:
+      - ./data:/data:z
+    ports:
+      - 8080:80
+      - 8000:8000
